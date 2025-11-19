@@ -33,7 +33,7 @@ func main() {
 	}
 	defer file.Close()
 
-	for i := 0; i < count; i++ {
+	for range count {
 
 		buf := make([]byte, length)
 		rand.Read(buf)
@@ -46,5 +46,4 @@ func main() {
 		}
 
 	}
-
 }
